@@ -15,15 +15,15 @@
                           '<script type="text/javascript" language="javascript">${openSocial.gadgetJavascript}</script>',
                           '<script type="text/javascript" src="${urls.base}/js/openSocial/orng.js"></script>')}
     </#if>	
-</#if>
-<#if metaTags??>
-    ${metaTags.list()}
 </#if>	
 
 <#include "stylesheets.ftl">
 <link rel="stylesheet" href="${urls.theme}/css/screen.css" />
 
 <#include "headScripts.ftl">
+<#if metaTags??>
+    ${metaTags.list()}
+</#if>
 
 <!--[if (gte IE 6)&(lte IE 8)]>
 <script type="text/javascript" src="${urls.base}/js/selectivizr.js"></script>
